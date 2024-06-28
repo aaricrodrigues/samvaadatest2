@@ -132,11 +132,11 @@
     }
     .textonleft h1{
         padding-top:40px;
-        font-size: 80px;
+        font-size: 70px;
     }
     .belowtext{
-        font-size: 28px;
-        line-height: 25%;
+        font-size: 25px;
+        line-height: 10px;
     }
     .textonleft{
       padding-left: 0px;
