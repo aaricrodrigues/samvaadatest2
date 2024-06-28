@@ -191,7 +191,43 @@
 }
 /*Flexbox 2 ends here*/
 
-
+.finalfooterflex{
+  margin-top: 20px;
+  display: flex;
+  max-width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color:black;
+  padding-top: 10px;
+  text-align: justify;
+}
+.footerleft{
+  max-width: 100%;
+  text-align: justify;
+}
+.footerright{
+  max-width: 100%;
+}
+.footermiddle{
+  max-width: 100%;
+}
+.logoimg{
+  max-width: 50px;
+  max-height: 50px;
+}
+.finalfooterflex h1{
+  color: white;
+}
+.ending{
+  background-color:black
+}
+.footer p{
+  font-size: 15px;
+  padding:5px;
+  color: white;
+}
 /*Media Queries for screens start here*/
 /*Phones*/
 @media only screen and (max-width: 640px) {
@@ -260,7 +296,6 @@
 }
 
 
-
 /*Tablets*/
 @media only screen and (min-width:641px) and (max-width: 1024px) {
     .imageonright{
@@ -287,6 +322,45 @@
       font-size: 20px;
       font-weight: bold;
       color: white;
+    }
+    .mobileonly{
+      display: flex;
+      padding-left:10vw;
+      padding-right: 10vw;
+    }
+    .onlylaptop{
+      display:none;
+    }
+    
+    .imagesbox{
+      width: 100%;
+      margin-left:0px;
+      left:50;
+      margin-top:20px;
+      box-sizing: border-box;
+      align-items: center;  
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .imagesbox img{
+      display:block;
+      max-width: 70vw;
+      border-radius: 10px;
+      border: 1px solid black;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+    .rightsidetext h2{
+      font-size: 15px;
+      font-weight: 200;
+      color: white;
+      box-sizing: border-box;
+      margin: 10px;
+      text-align:justify;
+      margin-left:20px;
+      margin-right: 20px;
     }
 }
 /*Media Queries for screens end here*/
