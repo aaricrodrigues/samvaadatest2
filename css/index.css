@@ -154,8 +154,45 @@
 }
 /*Button CSS ends here*/
 
-/*Media Queries for screens start here*/
+/*Flexbox 2 starts here*/
+.imagesbox{
+  width: 100%;
+  margin-left: 100px;
+  margin-top:20px;
+}
+.imagesbox img{
+  display:flex;
+  max-width: 40vw;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
+.imagesbox h1{
+  font-size: 50px;
+  color: white;
+}
+.mobileonly{
+  display:none;
+}
 
+.rightsidetext{
+  width: 100%;
+  margin-right: 70px;
+}
+.rightsidetext h1{
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+.rightsidetext h2{
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+/*Flexbox 2 ends here*/
+
+
+/*Media Queries for screens start here*/
 /*Phones*/
 @media only screen and (max-width: 640px) {
     .imageonright{
@@ -178,6 +215,48 @@
     .btn{
       margin-top:20px ;
     }
+    .mobileonly{
+      display: flex;
+      padding-left:10vw;
+      padding-right: 10vw;
+    }
+    .onlylaptop{
+      display:none;
+    }
+    .flexbox{
+      display:block;
+      box-sizing: border-box;
+    }
+    .imagesbox{
+      width: 100%;
+      margin-left:0px;
+      left:50;
+      margin-top:20px;
+      box-sizing: border-box;
+      align-items: center;  
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .imagesbox img{
+      display:block;
+      max-width: 70vw;
+      border-radius: 10px;
+      border: 1px solid black;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+    .rightsidetext h2{
+      font-size: 15px;
+      font-weight: 200;
+      color: white;
+      box-sizing: border-box;
+      margin: 10px;
+      text-align:justify;
+      margin-left:20px;
+      margin-right: 20px;
+    }
 }
 
 
@@ -198,5 +277,34 @@
     .textonleft{
         padding-left: 0px;
     }
+    .onlylaptop{
+      display:none;
+    }
+    .flexbox{
+      display:block;
+    }
+    .rightsidetext h2{
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
 }
 /*Media Queries for screens end here*/
+
+/*Extra media queries*/
+@media only screen and (min-width: 1025px) and (max-width: 1160px){
+    .rightsidetext{
+      width: 100%;
+      margin-right: 20px;
+    }
+    .rightsidetext h1{
+      font-size: 65px;
+      font-weight: bold;
+      color: white;
+    }
+    .rightsidetext h2{
+      font-size: 20px;
+      font-weight: 200;
+      color: white;
+    }
+}
