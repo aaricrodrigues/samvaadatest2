@@ -50,9 +50,9 @@
     position: fixed;
     top: 0; 
     right: 0;
-    height: 100vh;
+    height: 110vh;
     width: 250px;
-    background-color: rgb(255, 200, 0);
+    background-color:#d9d9d9;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
     display: none;
@@ -120,7 +120,17 @@
     border: 1px solid black;
     border-radius: 10px;
 }
-
+.mobileimageontop{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-top:20px;
+}
+.mobileimageontop img{
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
 /*Flexbox ends here*/
 
 /*Media Queries for screens start here*/
@@ -131,7 +141,7 @@
         display:none;
     }
     .textonleft h1{
-        padding-top:40px;
+        padding-top:0px;
         font-size: 60px;
     }
     .belowtext{
@@ -140,6 +150,9 @@
     }
     .textonleft{
       padding-left: 0px;
+    }
+    .mobileimageontop{
+      display: flex;
     }
 }
 
