@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+  }
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 110vh;
+    width: 250px;
+    background-color:#d9d9d9;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+
+/*Base Styles and Navbar Above*/
+
+/*CSS for the about us*/
+.start h1{
+  font-family: "Lobster", sans-serif;
+  font-weight: bold;
+  font-size: 130px;
+  color: black;
+  text-align: center;
+}
+.flexbox{
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+}
+.leftpara{
+  max-width: 100%;
+  margin:20px;
+  padding-top: 20px;
+}
+.leftpara p{
+  font-size: 20px;
+  text-justify: auto;
+}
+.rightimg{
+  max-width: 100%;
+  margin: 20px;
+}
+.rightimg img{
+  max-width: 40vw;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+/*about us ends here*/
+
+/*Footer*/
+.finalfooterflex{
+  margin-top: 20px;
+  display: flex;
+  max-width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color:black;
+  padding-top: 10px;
+  text-align: justify;
+}
+.footerleft{
+  max-width: 100%;
+  text-align: justify;
+}
+.footerright{
+  max-width: 100%;
+}
+.footermiddle{
+  max-width: 100%;
+}
+.logoimg{
+  max-width: 50px;
+  max-height: 50px;
+}
+.finalfooterflex h1{
+  color: white;
+}
+.ending{
+  background-color:black
+}
+.footer p{
+  font-size: 15px;
+  padding:5px;
+  color: white;
+}
+
+/*Footer*/
+
+/*Media Queries for screens start here*/
+/*Phones*/
+@media only screen and (max-width: 640px) {
+  .start h1{
+    font-size: 80px;
+  }
+  .flexbox{
+    display: block;
+  }
+  .leftpara p{
+    font-size: 15px;
+  }
+  .rightimg img {
+    max-width: 70vw;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+}
+
+
+/*Tablets*/
+@media only screen and (min-width:641px) and (max-width: 1024px) {
+  .start h1{
+    font-size: 100px;
+  }
+  .flexbox{
+    display: flex;
+    align-items: center;
+  }
+  .leftpara p{
+    font-size: 15px;
+  }
+  .leftpara{
+    flex:1;
+  }
+  .rightimg{
+    flex:1;
+    text-align: center;
+  }
+  .rightimg img{
+    max-width: 40vw;
+    margin: 0 auto;
+  }
+}
+/*Media Queries for screens end here*/
