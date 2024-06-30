@@ -89,42 +89,7 @@
     }
   }
 
-/*Base Styles and Navbar Above*/
-
-/*CSS for the about us*/
-.start h1{
-  font-family: "Lobster", sans-serif;
-  font-weight: bold;
-  font-size: 130px;
-  color: black;
-  text-align: center;
-}
-.flexbox{
-  width: 100%;
-  justify-content: flex-start;
-  display: flex;
-}
-.leftpara{
-  max-width: 100%;
-  margin:20px;
-  padding-top: 20px;
-}
-.leftpara p{
-  font-size: 20px;
-  text-justify: auto;
-}
-.rightimg{
-  max-width: 100%;
-  margin: 20px;
-}
-.rightimg img{
-  max-width: 40vw;
-  border-radius: 5px;
-  border: 1px solid white;
-}
-
-/*about us ends here*/
-
+  
 /*Footer*/
 .finalfooterflex{
   margin-top: 20px;
@@ -165,6 +130,82 @@
 }
 
 /*Footer*/
+/*Base Styles and Navbar Above*/
+
+/*CSS for the about us*/
+.start h1{
+  font-family: "Lobster", sans-serif;
+  font-weight: bold;
+  font-size: 130px;
+  color: black;
+  text-align: center;
+}
+.flexbox{
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+}
+.leftpara{
+  max-width: 100%;
+  margin:20px;
+  padding-top: 20px;
+}
+.leftpara p{
+  font-size: 20px;
+  text-justify: auto;
+}
+.rightimg{
+  max-width: 100%;
+  margin: 20px;
+}
+.rightimg img{
+  max-width: 40vw;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+/*about us ends here*/
+
+
+/*accmanaged box*/
+.flexboxmid{
+  max-width: 100%;
+  display: flex;
+  margin:10px;
+}
+.leftimage{
+  max-width: 100%;
+}
+.leftimage img{
+  max-width: 200px;
+  align-items: center;
+  justify-items: center;
+  display: wrap;
+}
+.leftimage h1{
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  flex-direction: column;
+}
+.accmanagedpara{
+  max-width: 100%;
+  flex: 1;
+  text-justify: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.accmanagedpara p{
+  font-size: 20px;
+  text-justify: auto;
+  align-self: center;
+}
+/*accmanaged ends here*/
+
+
 
 /*Media Queries for screens start here*/
 /*Phones*/
@@ -184,6 +225,19 @@
     display: block;
     border-radius: 5px;
     border: 1px solid white;
+  }
+  .flexboxmid{
+    display: block;
+  }
+  .accmanagedpara p{
+    font-size: 15px;
+  }
+  .leftimage img{
+    max-width: 40vw;
+    margin: 0 auto;
+  }
+  .leftimage h1{
+    font-size: 30px;
   }
 }
 
@@ -210,6 +264,22 @@
   .rightimg img{
     max-width: 40vw;
     margin: 0 auto;
+  }
+  .accmanagedpara{
+    flex:1;
+  }
+  .accmanagedpara p{
+    font-size: 15px;
+  }
+  .leftimage{
+    flex:1;
+    text-align: center;
+  }
+  .leftimage img{
+    margin: 0 auto;
+  }
+  .leftimage h1{
+    font-size: 30px;
   }
 }
 /*Media Queries for screens end here*/
