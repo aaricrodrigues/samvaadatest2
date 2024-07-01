@@ -264,6 +264,9 @@
   .flexbox{
      display: block;
    }
+  .leftpara{
+    margin-top:-10px;
+  }
   .leftpara p{
      font-size: 15px;
    }
