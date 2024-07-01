@@ -91,6 +91,9 @@
 
   
 /*Footer*/
+.footer{
+  display: block;
+}
 .finalfooterflex{
   margin-top: 20px;
   display: flex;
@@ -204,43 +207,106 @@
   align-self: center;
 }
 /*accmanaged ends here*/
+.displayblock {
+  display: flex;
+  max-width: 100;
+  justify-content: space-evenly;
+}
+.textleft{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+.textleft h1{
+  font-family: 'Clash Display', sans-serif;
+  font-size: 130px;
+  text-align: center;
+  text-justify: auto;
+  margin-top:-20px;
+  margin-bottom: -40px;
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.154);
+  -webkit-text-stroke: 1px black; /* For Safari/Chrome */
+}
+.imagesright{
+  flex:1;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.imagesright img{
+  max-width: 175px;
+  max-height: 175px;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
+}
 
+/*image display  box*/
+
+/*image ends*/
 
 /*Media Queries for screens start here*/
 /*Phones*/
 @media only screen and (max-width: 640px) {
   .start h1{
-    font-size: 80px;
-  }
+     font-size: 80px;
+   }
   .flexbox{
-    display: block;
-  }
+     display: block;
+   }
   .leftpara p{
-    font-size: 15px;
-  }
+     font-size: 15px;
+   }
   .rightimg img {
-    max-width: 70vw;
-    margin: 0 auto;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid white;
-  }
+     max-width: 70vw;
+     margin: 0 auto;
+     display: block;
+     border-radius: 5px;
+     border: 1px solid white;
+   }
   .flexboxmid{
-    display: block;
-  }
+     display: block;
+   }
   .accmanagedpara p{
-    font-size: 15px;
-  }
+     font-size: 15px;
+   }
   .leftimage img{
-    max-width: 40vw;
-    margin: 0 auto;
-  }
+     max-width: 40vw;
+     margin: 0 auto;
+   }
   .leftimage h1{
-    font-size: 30px;
-  }
-}
-
+     font-size: 30px;
+   }
+  .displayblock{
+     display: block;
+   }
+  .textleft{
+     display: block;
+   }
+  .imagesright{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+  .imagesright img{
+     margin: 5px;
+     max-width: 120px;
+     max-height:120px ;
+   }
+  .textleft h1{
+     font-size: 60px;
+   }
+ }
 
 /*Tablets*/
 @media only screen and (min-width:641px) and (max-width: 1024px) {
@@ -281,5 +347,46 @@
   .leftimage h1{
     font-size: 30px;
   }
+  .displayblock{
+    display: block;
+  }
+ .textleft{
+    display: block;
+  }
+ .imagesright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:40px;
+    margin-right: 40px;
+  }
+ .imagesright img{
+    margin: 5px;
+  }
+ .textleft h1{
+    font-size: 100px;
+  }
 }
 /*Media Queries for screens end here*/
+
+@media only screen and (min-width:1020px) and (max-width:1290px){
+  .displayblock{
+    display: block;
+  }
+  .textleft{
+    display: block;
+  }
+ .imagesright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:200px;
+    margin-right: 200px;
+  }
+ .imagesright img{
+    margin: 5px;
+  }
+ .textleft h1{
+    font-size: 100px;
+  }
+}
