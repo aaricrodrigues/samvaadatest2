@@ -7,10 +7,8 @@
   body{
     min-height: 100vh;
     background: rgb(131,58,180);
-    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -191,6 +189,7 @@
 }
 /*Flexbox 2 ends here*/
 
+/*Footer*/
 .finalfooterflex{
   margin-top: 20px;
   display: flex;
@@ -228,6 +227,9 @@
   padding:5px;
   color: white;
 }
+
+/*Footer*/
+
 /*Media Queries for screens start here*/
 /*Phones*/
 @media only screen and (max-width: 640px) {
