@@ -137,7 +137,7 @@
 
 /*CSS for the about us*/
 .start h1{
-  font-family: "Lobster", sans-serif;
+  font-family: "Clash Display", sans-serif;
   font-weight: bold;
   font-size: 130px;
   color: black;
@@ -190,6 +190,8 @@
   padding: 10px;
   font-size: 50px;
   flex-direction: column;
+  
+  font-family: "Clash Display", sans-serif;
 }
 .accmanagedpara{
   max-width: 100%;
@@ -264,9 +266,9 @@
   .flexbox{
      display: block;
    }
-  .leftpara{
-    margin-top:-10px;
-  }
+   .leftpara{
+    margin-top:-15px;
+   }
   .leftpara p{
      font-size: 15px;
    }
@@ -288,7 +290,7 @@
      margin: 0 auto;
    }
   .leftimage h1{
-     font-size: 30px;
+     font-size: 40px;
    }
   .displayblock{
      display: block;
@@ -307,7 +309,7 @@
      max-height:120px ;
    }
   .textleft h1{
-     font-size: 50px;
+     font-size: 60px;
    }
  }
 
