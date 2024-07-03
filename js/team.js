@@ -25,6 +25,14 @@ Particles.init({
     // options for breakpoints
     responsive: [
       {
+        breakpoint: 950,
+        options: { 
+          color: ['#DA0463', '#404B69', '#DBEDF3'],
+          connectParticles: true,
+          maxParticles: 70
+        }
+      },
+      {
         breakpoint: 768,
         options: {  
           color: ['#DA0463', '#404B69', '#DBEDF3'],
