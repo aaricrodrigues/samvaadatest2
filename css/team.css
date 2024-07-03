@@ -155,6 +155,8 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left:100px;
+    margin-right:100px;
 }
 .card {
     width: 160px;
@@ -181,7 +183,7 @@ html, body {
     border-radius: 50%;
     transition: transform .2s ease;
     margin-bottom: 1rem;
-    border:1px solid black;
+    border: 1px solid black;
   }
   .card-avatar img {
     width: 100%;
@@ -195,6 +197,7 @@ html, body {
     font-size: 1.2em;
     font-weight: 600;
     line-height: 2rem;
+    text-align: center;
    }
    .card-subtitle {
     color: #859ba8;
@@ -232,8 +235,8 @@ html, body {
    }
    /*Image*/
    .card-avatar {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
     border-radius: 50%;
     transition: transform .2s ease;
@@ -244,7 +247,7 @@ html, body {
     color: #333;
     font-size: .9em;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: center;
     text-justify: auto;
    }
@@ -254,6 +257,17 @@ html, body {
     text-align: center;
     text-justify: auto;
    }
+   .teamflexbox{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:0;
+    margin-right:0;
+  }
+  .card-avatar{
+    margin-top: -10px;
+  }
 }
   
 /*Tablets*/
